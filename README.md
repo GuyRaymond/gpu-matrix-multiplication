@@ -52,7 +52,6 @@ docker run --gpus all -v ${PWD}/images:/workspace/images -it gpu-object-detectio
 ## Output
 
 ### Performance Comparison (Set 1)
-|-------------|-------------------------------------|------------------------|
 | Matrix Size | Geometric Mean in second (CPU, GPU) | Fastest Geometric Mean |
 |-------------|-------------------------------------|------------------------|
 | 1x1         | 0.000000 (CPU), 0.002233 (GPU)      | CPU infx               |
@@ -66,10 +65,8 @@ docker run --gpus all -v ${PWD}/images:/workspace/images -it gpu-object-detectio
 | 256x256     | 0.031331 (CPU), 0.002685 (GPU)      | GPU 11.668093x         |
 | 512x512     | 0.399059 (CPU), 0.009497 (GPU)      | GPU 42.021511x         |
 | 1024x1024   | 7.221411 (CPU), 0.025972 (GPU)      | GPU 278.048759x        |
-|-------------|-------------------------------------|------------------------|
 
 ### Performance Comparison (Set 2)
-|-------------|-------------------------------------|------------------------|
 | Matrix Size | Geometric Mean in second (CPU, GPU) | Fastest Geometric Mean |
 |-------------|-------------------------------------|------------------------|
 | 5x5         | 0.000000 (CPU), 0.001262 (GPU)      | CPU infx               |
@@ -83,7 +80,6 @@ docker run --gpus all -v ${PWD}/images:/workspace/images -it gpu-object-detectio
 | 250x250     | 0.022710 (CPU), 0.004050 (GPU)      | GPU 5.606940x          |
 | 500x500     | 0.206672 (CPU), 0.008438 (GPU)      | GPU 24.492740x         |
 | 1000x1000   | 1.725369 (CPU), 0.026168 (GPU)      | GPU 65.933495x         |
-|-------------|-------------------------------------|------------------------|
 
 ## Conclusion
 The smaller the matrix size, the faster the computation.
