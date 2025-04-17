@@ -29,7 +29,7 @@ docker desktop start
 ### 3. Build the Docker image
 
 ```bash
-docker build -t maxtrix-multiplication .
+docker build -t gpu-maxtrix-multiplication .
 ```
 
 ### 4. Run the Docker container
