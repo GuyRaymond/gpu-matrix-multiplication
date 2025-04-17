@@ -21,33 +21,23 @@ cd gpu-maxtrix-multiplication
 
 Place your image in images/input.jpg.
 
-### 1.1 On Linux Bash
+### 2. Start Docker
+```bash
+docker desktop
+```
 
-Build the Docker image
+### 3. Build the Docker image
 
 ```bash
 docker build -t maxtrix-multiplication .
 ```
 
-Run the Docker container
+### 4. Run the Docker container
 
 ```bash
-docker run --gpus all matrix-multiplication-gpu
+docker run --gpus all gpu-matrix-multiplication
 ```
 
-### 1.2 On Windows PowerShell
-
-Build the Docker image
-
-```bash
-docker build -t gpu-object-detection .
-```
-
-Run the Docker container
-
-```bash
-docker run --gpus all -v ${PWD}/images:/workspace/images -it gpu-object-detection
-```
 
 ## Output
 
