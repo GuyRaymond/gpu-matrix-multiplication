@@ -23,7 +23,7 @@ Place your image in images/input.jpg.
 
 ### 2. Start Docker
 ```bash
-docker desktop
+docker desktop start
 ```
 
 ### 3. Build the Docker image
